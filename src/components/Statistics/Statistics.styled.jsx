@@ -1,18 +1,17 @@
 import styled from "@emotion/styled";
 
 export const OptionsList = styled.ul`
-
+    padding: 5px 10px;
 `;
 
 export const Item = styled.li`
- 
+
 `;
 
-export const Option = styled.button`
-padding: 5px 20px;
-font-weight: 700;
-font-size: 18px;
+export const Grade = styled.p`
 
-cursor: pointer;
+`;
+
+export const ItemValue = styled.span`
 
 `;
