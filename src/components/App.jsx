@@ -17,14 +17,14 @@ export class App extends Component {
     }));
   };
 
-  countTotalFeedback = () => {
+  countTotalFeedback() {
     const values = Object.values(this.state);
     return values.reduce((total, value) => total + value, 0);
-  };
+  }
 
-  countPositiveFeedbackPercentage = (total, good) => {
+  countPositiveFeedbackPercentage(total, good) {
     return Math.round((good / total) * 100);
-  };
+  }
 
   render() {
     const { good, neutral, bad } = this.state;
